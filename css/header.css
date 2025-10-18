@@ -1,0 +1,49 @@
+.header-bg {
+    background: var(--cor-secundaria); 
+    height: 96px; 
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 220px;
+    padding-right: 220px;
+    max-width: 1600px;
+    margin: 0 auto; 
+    height: 100%; 
+}
+
+.header h1 {
+    color: var(--cor-fundo);
+    padding-top: 36px;
+    padding-bottom: 36px;
+    height: 100%; 
+    box-sizing: border-box;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.header-menu {
+    display: flex;
+    gap: 60px;
+}
+
+.header-menu a {
+    color: var(--cor-fundo);
+    padding-top: 36px;
+    padding-bottom: 36px;
+    display: inline-block;
+    transition: color 0.3s;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.header-menu a:hover {
+    color: var(--cor-destaque);
+}
+

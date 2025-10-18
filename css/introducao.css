@@ -1,0 +1,50 @@
+.introducao-bg {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.introducao {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 880px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.introducao img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.citacao-box {
+    position: absolute;
+    top: 100px;
+    right: 120px;
+    z-index: 10;
+    text-align: right;
+    max-width: 520px; 
+}
+
+.citacao-texto {
+    color: var(--cor-fundo);
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.75rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.citacao-assinatura {
+    color: var(--cor-fundo);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    display: block;
+    font-weight: 400;
+}

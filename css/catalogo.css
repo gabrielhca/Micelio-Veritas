@@ -1,0 +1,63 @@
+.catalogo {
+    padding-top: 220px;
+    padding-bottom: 100px;
+}
+
+.catalogo-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    color: var(--cor-principal);
+    padding-left: 220px; 
+    padding-right: 220px;
+    margin-bottom: 60px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.catalogo-lista {
+    padding-left: 70px; 
+    padding-right: 70px; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    row-gap: 70px; 
+    column-gap: 40px; 
+    max-width: 1600px;
+    margin: 0 auto; 
+}
+
+.catalogo-lista > li > img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.catalogo-lista > li > img:hover {
+    transform: scale(1.02);
+}
+
+.catalogo-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.catalogo-info img.decor-icone {
+    width: 12px;
+    height: 8px;
+    min-width: 12px;
+    min-height: 8px;
+    margin-right: 7px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.catalogo-info h3 {
+    font-size: 28px;
+    color: var(--cor-secundaria);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    font-weight: 600;
+}
