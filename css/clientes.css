@@ -9,29 +9,22 @@
     font-family: 'Playfair Display', serif;
     font-size: 64px;
     color: var(--cor-principal);
-    padding-left: 220px;
-    padding-right: 220px;
     margin-bottom: 60px;
     font-weight: 600;
     line-height: 1.2;
 }
 
 .clientes-lista {
-    padding-left: 70px;
-    padding-right: 70px;
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    max-width: 1600px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
 .depoimento-box {
-    border: 2px solid var(--cor-secundaria); 
-    background-color: transparent;
+    border: 2px solid transparent; 
+    background-color: var(--cor-fundo-alternativo);
     padding: 36px; 
     border-radius: 8px;
-    width: calc(100% - 240px);
     box-sizing: border-box;
     transition: border-color 0.3s ease, transform 0.3s ease;
 }

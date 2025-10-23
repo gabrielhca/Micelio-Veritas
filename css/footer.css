@@ -8,10 +8,6 @@
     grid-template-columns: 2fr 1fr 1fr; 
     gap: 40px; 
     padding-top: 80px;
-    padding-left: 220px;
-    padding-right: 220px;
-    max-width: 1600px;
-    margin: 0 auto;
 }
 
 .footer-logo {

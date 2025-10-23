@@ -1,8 +1,8 @@
 :root {
   --cor-fundo: #F7F4EB;
-  --cor-principal: #191614;
-  --cor-secundaria: #28201B;
-  --cor-destaque: #5B92E5;
+  --cor-fundo-alternativo: #E5E2DA;
+  --cor-escura: #28201B;
+  --cor-destaque: #FF8352;
   --cor-texto-suave: #696058;
 }
 
@@ -14,7 +14,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  color: var(--cor-secundaria);
+  color: var(--cor-escura);
   background: var(--cor-fundo);
 }
 
@@ -35,9 +35,18 @@ img {
 
 h1 {
   font-family: 'Playfair Display', serif;
-  color: var(--cor-principal);
+  color: var(--cor-escura);
 }
 
 h2, h3, a {
   font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1600px;
+    padding-left: 120px;
+    padding-right: 120px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }

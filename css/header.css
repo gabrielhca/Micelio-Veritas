@@ -1,5 +1,5 @@
 .header-bg {
-    background: var(--cor-secundaria); 
+    background: var(--cor-escura); 
     height: 96px; 
     width: 100%;
     position: sticky;
@@ -11,10 +11,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 220px;
-    padding-right: 220px;
-    max-width: 1600px;
-    margin: 0 auto; 
     height: 100%; 
 }
 
@@ -40,7 +36,7 @@
     display: inline-block;
     transition: color 0.3s;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .header-menu a:hover {
