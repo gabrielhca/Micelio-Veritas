@@ -7,7 +7,7 @@
         <title>MÍCELIO VERITAS - O Sabor e Sofisticação</title>
         <meta name="description" content="Cogumelos de alta qualidade, cultivados com rigor e paixão. Assinaturas exclusivas para chefs e entusiastas.">
 
-        <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+        <link rel="icon" href="./img/favicon.png" type="image/png">
         <link rel="preload" href="./css/style.css" as="style">
         <link rel="stylesheet" href="./css/style.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
         <script>
             document.documentElement.classList.add('js');
         </script>
+        <script src="./js/menu-mobile.js" defer></script>
     </head>
 
     <body>
@@ -26,8 +27,11 @@
                 </a>
 
                 <nav aria-label="primaria">
-                    <ul class="header-menu">
-                        <li><a href="./cogumelos.html">Cogumelos</a></li>
+                    <button class="mobile-button" aria-controls="menu" aria-haspopup="true" aria-expanded="false">
+                        <span class="hamburguer"></span>
+                        Menu
+                    </button>
+                    <ul class="header-menu" id="menu">
                         <li><a href="./assinatura.html">Assinatura</a></li>
                         <li><a href="./contato.html">Contato</a></li>
                     </ul>
@@ -51,7 +55,11 @@
         </main>
         
         <article class="catalogo container">
-            <h2 class="catalogo-titulo">Cogumelos Orgânicos</h2>
+            <div class="catalogo-cabecalho">
+              <p class="catalogo-subtitulo">Cogumelos Orgânicos</p>
+              <h1 class="catalogo-titulo-principal">Cogumelos por Assinatura</h1>
+              <p class="catalogo-descricao">Oferecemos um serviço de assinatura exclusivo, pensado para entusiastas e chefs que não aceitam menos que o extraordinário. Receba o ápice do nosso cultivo, com rigor e frescor, entregue na sua porta.</p>
+            </div>
             
             <ul class="catalogo-lista">
                 <li>
@@ -166,6 +174,113 @@
                 </li>
             </ul>
         </article>
+
+        <article class="mv-assinaturas-bg">
+  <div class="mv-assinaturas container">
+    <h1>Assinaturas</h1>
+
+    <div class="mv-assinaturas-item">
+      <h3>FAMÍLIA MÍCELIOS</h3>
+      <span>R$ 199 <span class="mensal">mensal</span></span>
+      <p>O ESSENCIAL: PARA ENTUSIASTAS E FAMÍLIAS QUE BUSCAM A EXCLUSIVIDADE NA ROTINA.</p>
+      <ul>
+        <li>
+          <span class="icone-seta">
+            <svg width="20" height="14" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.75879 6.9887L5.27653 10.4753L8.79426 13.9619L15.8297 6.9887L19.3475 3.50209L21.1063 1.75879" stroke="url(#paint0_linear_418_1637)" stroke-width="3.51774" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="paint0_linear_418_1637" x1="11.4326" y1="1.75879" x2="11.4326" y2="13.9619" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#5B92E5"/> <stop offset="1" stop-color="#32517F"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          Curadoria do Lote: 200g - 500g dos cogumelos mais frescos do Lote.
+        </li>
+        <li>
+          <span class="icone-seta">
+            <svg width="20" height="14" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.75879 6.9887L5.27653 10.4753L8.79426 13.9619L15.8297 6.9887L19.3475 3.50209L21.1063 1.75879" stroke="url(#paint0_linear_418_1637)" stroke-width="3.51774" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          Desconto do Mestre: 10% fixo na Reserva de Lote (compra avulsa).
+        </li>
+        <li>
+          <span class="icone-seta">
+            <svg width="20" height="14" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.75879 6.9887L5.27653 10.4753L8.79426 13.9619L15.8297 6.9887L19.3475 3.50209L21.1063 1.75879" stroke="url(#paint0_linear_418_1637)" stroke-width="3.51774" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          Receitas da Família: Acesso exclusivo ao e-book de receitas do acervo Nogueira.
+        </li>
+      </ul>
+      <a class="botao familia" href="./assinatura.html">INSCREVA-SE</a>
+    </div>
+
+    <div class="mv-assinaturas-item">
+      <h3>CHEF GOUMET</h3>
+      <span>R$ 799 <span class="mensal">mensal</span></span>
+      <p>PARA CHEFS, RESTAURANTES E LOJAS GOURMET QUE PRECISAM DE VOLUME E CONSISTÊNCIA.</p>
+      <ul>
+        <li>
+          <span class="icone-seta">
+            <svg width="20" height="14" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.75879 6.9887L5.27653 10.4753L8.79426 13.9619L15.8297 6.9887L19.3475 3.50209L21.1063 1.75879" stroke="url(#paint1_linear_418_1637)" stroke-width="3.51774" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="paint1_linear_418_1637" x1="11.4326" y1="1.75879" x2="11.4326" y2="13.9619" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#5B92E5"/> <stop offset="1" stop-color="#32517F"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          Lote Garantido: Reserva de 1kg - 5kg de cada espécie por entrega.
+        </li>
+        <li>
+          <span class="icone-seta">
+            <svg width="20" height="14" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.75879 6.9887L5.27653 10.4753L8.79426 13.9619L15.8297 6.9887L19.3475 3.50209L21.1063 1.75879" stroke="url(#paint2_linear_418_1637)" stroke-width="3.51774" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="paint2_linear_418_1637" x1="11.4326" y1="1.75879" x2="11.4326" y2="13.9619" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#5B92E5"/> <stop offset="1" stop-color="#32517F"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          Acesso à Pré-Colheita: Pedidos especiais de volume 1 semana antes do Lote.
+        </li>
+        <li>
+          <span class="icone-seta">
+            <svg width="20" height="14" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.75879 6.9887L5.27653 10.4753L8.79426 13.9619L15.8297 6.9887L19.3475 3.50209L21.1063 1.75879" stroke="url(#paint3_linear_418_1637)" stroke-width="3.51774" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="paint3_linear_418_1637" x1="11.4326" y1="1.75879" x2="11.4326" y2="13.9619" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#5B92E5"/> <stop offset="1" stop-color="#32517F"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          Consultoria do Chef: Sessão trimestral com um chef parceiro para otimização do uso do produto.
+        </li>
+        <li>
+          <span class="icone-seta">
+            <svg width="20" height="14" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.75879 6.9887L5.27653 10.4753L8.79426 13.9619L15.8297 6.9887L19.3475 3.50209L21.1063 1.75879" stroke="url(#paint4_linear_418_1637)" stroke-width="3.51774" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="paint4_linear_418_1637" x1="11.4326" y1="1.75879" x2="11.4326" y2="13.9619" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#5B92E5"/> <stop offset="1" stop-color="#32517F"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+          Prioridade na entrega.
+        </li>
+      </ul>
+      <a class="botao chef" href="./assinatura.html">INSCREVA-SE</a>
+    </div>
+
+  </div>
+</article>
+
         <footer class="footer-bg">
             <div class="footer container">
                 
@@ -179,8 +294,6 @@
                     <ul class="footer-lista-contato">
                         <li><a href="tel:+5533999900999">+55 33 99990-0999</a></li>
                         <li><a href="mailto:contato@micelioveritas.com">contato@micelioveritas.com</a></li>
-                        <li>Rua Ali Perto, 5</li>
-                        <li>Governador Valadares - MG</li>
                     </ul>
                 </div>
 
@@ -188,10 +301,8 @@
                     <h3 class="footer-subtitulo">INFORMAÇÕES</h3>
                     <nav aria-label="secundaria">
                         <ul class="footer-menu">
-                            <li><a href="./cogumelos.html">Cogumelos</a></li>
                             <li><a href="./assinatura.html">Assinatura</a></li>
                             <li><a href="./contato.html">Contato</a></li>
-                            <li><a href="./termos.html">Termos e Condições</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -199,8 +310,6 @@
             </div>
         </footer>
 
-        <script src="./js/plugins/simple-anime.js"></script>
         <script src="./js/script.js"></script>
-        <script src="./js/formulario.js"></script>
     </body>
 </html>

@@ -50,3 +50,17 @@ h2, h3, a {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,229 @@
+#assinaturas {
+  background: var(--cor-fundo);
+}
+
+.orcamento {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  margin-bottom: 120px;
+}
+
+.orcamento h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.orcamento-dados {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-produto {
+  padding: 0px 30px 30px 30px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px 0 0 5px;
+  background: var(--cor-escura);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-content: start;
+}
+
+.orcamento-produto > * {
+  grid-column: 1/-1;
+}
+
+.orcamento-produto > label {
+  grid-column: initial;
+}
+
+.orcamento-produto label {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--cor-fundo);
+  background-color: var(--cor-escura);
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  border: 1px solid var(--cor-fundo);
+}
+
+.orcamento-produto input:checked + label {
+  background: var(--cor-fundo-alternativo);
+  color: var(--cor-escura);
+  border-color: var(--cor-fundo-alternativo);
+}
+
+.orcamento-produto label::before {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--cor-fundo);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.orcamento-produto input:checked + label::before {
+  border-color: var(--cor-escura);
+  box-shadow: inset 0 0 0 3px var(--cor-fundo-alternativo), inset 0 0 0 6px var(--cor-escura);
+}
+
+.orcamento-produto label:hover {
+  background-color: var(--cor-escura);
+  border-color: var(--cor-destaque);
+}
+
+.orcamento-produto .plano {
+  display: flex;
+  flex-direction: column;
+}
+
+.orcamento-produto input:focus + label {
+  box-shadow: 0 0 0 2px var(--cor-destaque);
+  border-color: var(--cor-fundo);
+}
+
+.orcamento-produto label span {
+  display: inline-block;
+}
+
+.orcamento-produto input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.orcamento-dados {
+  border-radius: 0 5px 5px 0;
+  background: var(--cor-fundo-alternativo);
+}
+
+.orcamento-detalhes-wrapper {
+  grid-column: 1/-1;
+  padding-top: 20px;
+}
+
+.orcamento-detalhes {
+  display: none;
+  background: var(--cor-escura);
+  padding: 20px;
+  border-radius: 4px;
+  color: var(--cor-fundo);
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.orcamento-detalhes ul {
+  padding: 0px;
+}
+
+.orcamento-detalhes li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.orcamento-detalhes li img {
+  width: 16px;
+  height: 10px;
+  margin-right: 8px;
+}
+
+.orcamento-produto input:checked + label + .orcamento-detalhes {
+  display: block;
+}
+
+.orcamento-planos {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px 0 0 5px;
+  background: var(--cor-escura);
+}
+
+.titulo-bg p {
+  font: 600 1.25rem/1.5;
+  color: var(--cor-fundo);
+  text-transform: uppercase;
+}
+
+.titulo-bg h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 1.125;
+  color: var(--cor-escura);
+}
+
+.orcamento-produto h2 {
+  font: 600 1.25rem/1.33;
+  color: var(--cor-fundo);
+  text-transform: uppercase;
+  position: relative;
+}
+
+.orcamento-detalhes ul {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.43;
+  color: var(--cor-fundo);
+}
+
+.orcamento-detalhes p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.43;
+  color: var(--cor-fundo);
+  margin-bottom: 24px;
+}
+
+.orcamento-dados h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.33;
+  color: var(--cor-escura);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.icone-ponto {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.orcamento-dados label[for="termos"] {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  color: var(--cor-escura);
+}
+
+@media (max-width: 1200px) {
+    .orcamento {
+        grid-template-columns: 1fr;
+    }
+    .orcamento-produto {
+        border-radius: 5px 5px 0 0;
+    }
+    .orcamento-dados {
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .orcamento-produto {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Planos de Assinatura - MÍCELIO VERITAS</title>
+        <meta name="description" content="Escolha seu plano de assinatura, Família ou Chef, e receba cogumelos exclusivos...">
+
+        <link rel="icon" href="./img/favicon.png" type="image/png">
+        <link rel="preload" href="./css/style.css" as="style">
+        <link rel="stylesheet" href="./css/style.css"> <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        
+        <script>
+            document.documentElement.classList.add('js');
+        </script>
+        <script src="./js/menu-mobile.js" defer></script>
+    </head>
+
+<body id="assinaturas">
+  <header class="header-bg">
+    <div class="header container">
+      <a href="./">
+        <img src="./img/logo.svg" alt="Mícelio Veritas">
+      </a>
+
+      <nav aria-label="primaria">
+        <button class="mobile-button" aria-controls="menu" aria-haspopup="true" aria-expanded="false">
+            <span class="hamburguer"></span>
+            Menu
+        </button>
+        <ul class="header-menu" id="menu">
+          <li><a href="./assinatura.html">Assinatura</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="titulo-bg">
+      <div class="titulo container">
+        <p>O CAMINHO DA COLHEITA ESTÁ AQUI</p>
+        <h1>Planos de Cultivo</h1>
+      </div>
+    </div>
+
+    <div class="orcamento container">
+      <div class="orcamento-planos">
+        <div class="orcamento-produto">
+          <h2 class="col-2">Escolha seu Plano:</h2>
+          <input type="radio" name="produto" value="familia" id="familia" checked>
+          <label for="familia">
+            <div class="plano">
+              <div class="plano-nome">Família Micélios</div>
+              <div class="plano-valor"><span>R$ 97 / mês</span></div>
+            </div>
+          </label>
+          <input type="radio" name="produto" value="chef" id="chef">
+          <label for="chef">
+            <div class="plano">
+              <div class="plano-nome">Chef Micélios</div>
+              <div class="plano-valor"><span>R$ 247 / mês</span></div>
+            </div>
+          </label>
+        </div>
+        <div class="orcamento-detalhes-wrapper">
+          <div class="orcamento-detalhes" data-plano="familia">
+            <p>O essencial para entusiastas e famílias que buscam a exclusividade na rotina.</p>
+            <ul>
+              <li><img src="./img/seta.svg" alt="">Curadoria do Lote: 200g - 500g dos cogumelos mais frescos do Lote.</li>
+              <li><img src="./img/seta.svg" alt="">Desconto do Mestre: 10% fixo na Reserva de Lote (compra avulsa).</li>
+              <li><img src="./img/seta.svg" alt="">Receitas da Família: Acesso exclusivo ao e-book de receitas do acervo Nogueira.</li>
+            </ul>
+          </div>
+          <div class="orcamento-detalhes" data-plano="chef">
+            <p>Para chefs, restaurantes e lojas gourmet que precisam de volume e consistência.</p>
+            <ul>
+              <li><img src="./img/seta.svg" alt="">Lote Garantido: Reserva de 1kg - 5kg de cada espécie por entrega.</li>
+              <li><img src="./img/seta.svg" alt="">Acesso à Pré-Colheita: Pedidos especiais de volume 1 semana antes do Lote.</li>
+              <li><img src="./img/seta.svg" alt="">Consultoria do Chef: Sessão trimestral com um chef parceiro para otimização do uso do produto.</li>
+              <li><img src="./img/seta.svg" alt="">Prioridade na entrega.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="orcamento-dados form">
+        <h2 class="col-2"><span class="icone-ponto"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8.01855" y="0.00927734" width="12" height="8" rx="4" transform="rotate(90.1313 8.01855 0.00927734)" fill="url(#paint0_linear_492_602)"/><defs><linearGradient id="paint0_linear_492_602" x1="14.0186" y1="0.00927734" x2="14.0186" y2="8.00928" gradientUnits="userSpaceOnUse"><stop stop-color="#FF8352"/><stop offset="1" stop-color="#994F31"/></linearGradient></defs></svg></span>dados pessoais</h2>
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" id="sobrenome" name="sobrenome" required>
+        </div>
+        <div class="col-2">
+          <label for="cpf">CPF</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+        </div>
+        <div class="col-2">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <h2 class="col-2"><span class="icone-ponto"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8.01855" y="0.00927734" width="12" height="8" rx="4" transform="rotate(90.1313 8.01855 0.00927734)" fill="url(#paint0_linear_492_602)"/><defs><linearGradient id="paint0_linear_492_602" x1="14.0186" y1="0.00927734" x2="14.0186" y2="8.00928" gradientUnits="userSpaceOnUse"><stop stop-color="#FF8352"/><stop offset="1" stop-color="#994F31"/></linearGradient></defs></svg></span>entrega</h2>
+        <div>
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" required>
+        </div>
+        <div>
+          <label for="numero">Número</label>
+          <input type="text" id="numero" name="numero" required>
+        </div>
+        <div class="col-2">
+          <label for="logradouro">Logradouro</label>
+          <input type="text" id="logradouro" name="logradouro" required>
+        </div>
+        <div>
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" required>
+        </div>
+        <div>
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade" required>
+        </div>
+        <div>
+          <label for="estado">Estado</label>
+          <input type="text" id="estado" name="estado" required>
+        </div>
+        
+        <div class="col-2">
+          <input type="checkbox" id="termos" name="termos" required>
+          <label for="termos" style="display: inline; cursor: pointer;"> Li e aceito os termos e condições.</label>
+        </div>
+
+        <button class="botao col-2">SOLICITAR ASSINATURA</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <div class="footer-logo">
+        <img src="./img/logo.svg" alt="Mícelio Veritas">
+      </div>
+
+      <div class="footer-contato">
+        <h3 class="footer-subtitulo">CONTATO</h3>
+        <ul class="footer-lista-contato">
+          <li><a href="tel:+5533999900999">+55 33 99990-0999</a></li>
+          <li><a href="mailto:contato@micelioveritas.com">contato@micelioveritas.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-informacoes">
+        <h3 class="footer-subtitulo">INFORMAÇÕES</h3>
+        <nav aria-label="secundaria">
+          <ul class="footer-menu">
+            <li><a href="./assinatura.html">Assinatura</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy">MÍCELIO VERITAS © Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

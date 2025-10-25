@@ -1,5 +1,5 @@
 .clientes-bg {
-    padding-top: 220px;
+    padding-top: 120px;
     padding-bottom: 220px;
 }
 
@@ -20,18 +20,38 @@
     gap: 40px;
 }
 
+@media (max-width: 1200px) {
+    .clientes-lista {
+        grid-template-columns: 1fr;
+    }
+    .clientes-titulo {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 800px) {
+    .clientes-bg {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+    .clientes-titulo {
+        font-size: 36px;
+    }
+}
+
 .depoimento-box {
     border: 2px solid transparent; 
     background-color: var(--cor-fundo-alternativo);
     padding: 36px; 
     border-radius: 8px;
     box-sizing: border-box;
-    transition: border-color 0.3s ease, transform 0.3s ease;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .depoimento-box:hover {
     border-color: var(--cor-destaque);
     transform: translateY(-4px);
+    box-shadow: 0 0 0 2px rgba(255, 131, 82, 0.5);
 }
 
 .depoimento-conteudo {
@@ -57,14 +77,12 @@
 
 .depoimento-nome {
     font-size: 20px;
-    font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: var(--cor-principal);
 }
 
 .depoimento-citacao {
     font-size: 15px;
-    font-family: 'Inter', sans-serif;
     color: var(--cor-texto-suave);
     line-height: 1.7;
     font-style: italic;

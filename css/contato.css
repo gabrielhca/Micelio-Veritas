@@ -1,0 +1,272 @@
+/* === TÍTULO === */
+.titulo-bg {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  background-color: var(--cor-fundo); 
+}
+
+.titulo-bg .titulo p {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--cor-escura);
+  margin-bottom: 8px;
+}
+
+.titulo h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.125;
+  color: var(--cor-escura);
+}
+
+#contato {
+  background-color: var(--cor-fundo);
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.contato-dados {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px 0 0 5px;
+  background: var(--cor-escura);
+}
+
+.contato-dados h2 {
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--cor-fundo);
+}
+
+.contato-endereco {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.contato-endereco img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.contato-endereco p {
+  margin-bottom: 4px;
+}
+
+.contato-meios a {
+  max-width: max-content;
+}
+
+.contato-meio-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.contato-meio-item img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.contato-meios a:hover {
+  color: var(--cor-destaque);
+}
+
+.contato-formulario {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0 5px 5px 0;
+  background: var(--cor-fundo-alternativo);
+}
+
+.contato-dados,
+.contato-meios {
+  color: var(--cor-fundo);
+}
+
+.lojas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.lojas h2 {
+  grid-column: 1/-1;
+  margin-bottom: 60px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.125;
+  color: var(--cor-escura);
+}
+
+.lojas img {
+  border-radius: 4px 4px 0 0;
+  object-fit: cover;
+  object-position: top;
+  height: 220px;
+  width: 100%;
+}
+
+.lojas-item {
+  border-radius: 4px;
+  background: var(--cor-fundo-alternativo);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.lojas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px 16px;
+  padding: 32px;
+}
+
+.lojas-titulo {
+  display: flex;
+  align-items: center;
+}
+
+.lojas-titulo .decor-icone {
+  width: 12px;
+  height: 8px;
+  min-width: 12px;
+  min-height: 8px;
+  margin-right: 7px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.lojas-titulo,
+.lojas-tempo {
+  grid-column: 1/-1;
+}
+
+.lojas-dados {
+  display: grid;
+  gap: 8px;
+  padding-left: 12px;
+  border-left: 2px solid var(--cor-fundo);
+}
+
+.lojas-tempo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lojas-tempo img {
+  width: 20px;
+  height: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label {
+  display: block;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.form .col-2 {
+  grid-column: span 2;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font-family: 'Inter', sans-serif;
+  background: var(--cor-fundo);
+  border: 1px solid var(--cor-fundo-alternativo);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--cor-destaque);
+  background: var(--cor-fundo);
+  box-shadow: 0 0 0 2px rgba(255, 131, 82, 0.5);
+}
+
+/* Botão */
+.botao {
+  display: inline-block;
+  padding: 16px 32px;
+  background: linear-gradient(#FF8352, #994F31);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: var(--cor-fundo);
+  font: 600 1.125rem/1.35 'Inter', sans-serif;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: linear-gradient(#ff9d7d, #b36b4a);
+}
+
+.contato-formulario .botao {
+    background: linear-gradient(#FF8352, #994F31);
+    color: var(--cor-fundo);
+    border: none;
+}
+
+.contato-formulario .botao:hover {
+    background: linear-gradient(#FF8352, #994F31);
+}
+
+@media (max-width: 1200px) {
+    .titulo-bg {
+        padding-top: 60px;
+    }
+    .titulo h1 {
+        font-size: 48px;
+    }
+    .titulo p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .contato {
+        grid-template-columns: 1fr;
+    }
+    .contato-dados, .contato-formulario {
+        padding: 20px;
+    }
+    .contato-dados {
+        border-radius: 5px 5px 0 0;
+    }
+    .contato-formulario {
+        border-radius: 0 0 5px 5px;
+    }
+    .lojas {
+        grid-template-columns: 1fr;
+    }
+}
+

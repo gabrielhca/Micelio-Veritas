@@ -39,12 +39,52 @@
     line-height: 1.5;
     margin-bottom: 24px;
     font-weight: 500;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
 
 .citacao-assinatura {
     color: var(--cor-fundo);
-    font-family: 'Inter', sans-serif;
     font-size: 1.125rem;
     display: block;
     font-weight: 400;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+@media (max-width: 1200px) {
+    .citacao-box {
+        right: 60px;
+    }
+}
+
+@media (max-width: 800px) {
+    .introducao {
+        height: 600px;
+    }
+    .citacao-box {
+        top: 60px;
+        right: 20px;
+        max-width: 300px;
+    }
+    .citacao-texto {
+        font-size: 1.25rem;
+    }
+    .citacao-assinatura {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .introducao {
+        height: 400px;
+    }
+    .citacao-box {
+        top: 40px;
+        max-width: 250px;
+    }
+    .citacao-texto {
+        font-size: 1rem;
+    }
+    .citacao-assinatura {
+        font-size: 0.875rem;
+    }
 }

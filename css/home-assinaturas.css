@@ -1,0 +1,133 @@
+.mv-assinaturas-bg {
+  background: #FF8352;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.mv-assinaturas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.mv-assinaturas h1 {
+  grid-column: 1/-1;
+  font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-weight: 600;
+  color: var(--cor-escura);
+  margin-bottom: 60px;
+}
+
+.mv-assinaturas-item {
+  background-color: var(--cor-fundo);
+  border: 2px solid var(--cor-escura);
+  border-radius: 5px;
+  padding: 32px 42px 32px 70px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  color: var(--cor-escura);
+}
+
+.mv-assinaturas-item h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.mv-assinaturas-item span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.mv-assinaturas-item span .mensal {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--cor-texto-suave);
+}
+
+.mv-assinaturas-item p {
+  grid-column: 1/-1;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--cor-escura);
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.mv-assinaturas-item ul {
+  grid-column: 1/-1;
+  margin-bottom: 60px;
+}
+
+.mv-assinaturas-item li {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+}
+
+.mv-assinaturas-item li + li {
+  margin-top: 16px;
+}
+
+.mv-assinaturas-item li .icone-seta {
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  margin-top: -10px;
+}
+
+.mv-assinaturas-item a.botao {
+  grid-column: 1/-1;
+  font-weight: 600;
+  font-size: 1.125rem;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mv-assinaturas-item a.familia {
+  background: linear-gradient(#E5E2DA, #7F7D79);
+  color: var(--cor-escura);
+}
+
+.mv-assinaturas-item a.chef {
+  background: linear-gradient(#5B92E5, #32517F);
+  color: var(--cor-fundo);
+}
+
+@media (max-width: 1200px) {
+    .mv-assinaturas {
+        grid-template-columns: 1fr;
+    }
+    .mv-assinaturas h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 800px) {
+    .mv-assinaturas-bg {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .mv-assinaturas h1 {
+        font-size: 36px;
+    }
+    .mv-assinaturas-item {
+        padding: 20px;
+    }
+}

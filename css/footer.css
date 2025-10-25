@@ -1,5 +1,5 @@
 .footer-bg {
-    padding-top: 80px; 
+    padding-top: 60px; 
     background-color: var(--cor-escura); 
 }
 
@@ -24,7 +24,6 @@
 
 .footer-subtitulo {
     font-size: 20px; 
-    font-family: 'Inter', sans-serif;
     color: var(--cor-fundo); 
     margin-bottom: 24px;
     text-transform: uppercase;
@@ -48,7 +47,6 @@
 .footer-menu li a,
 .footer-lista-contato li {
     font-size: 15px;
-    font-family: 'Inter', sans-serif;
     color: var(--cor-fundo);
     line-height: 1.6;
     transition: color 0.3s;
@@ -64,7 +62,17 @@
     text-align: center;
     font-size: 14px;
     color: var(--cor-fundo); 
-    margin-top: 80px;
+    margin-top: 60px;
     padding-bottom: 40px;
     opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+    .footer.container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .footer-copy {
+        margin-top: 0;
+    }
 }
