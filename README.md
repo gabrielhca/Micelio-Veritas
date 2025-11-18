@@ -27,4 +27,4 @@ Este é um site puramente estático (HTML, CSS, JS). Não há necessidade de ins
 
 Os formulários de contato e assinatura são apenas visuais.
 
-O arquivo `js/formulario.js` (que não está sendo usado no `contato.html`) e o `js/script.js` preparam os formulários, mas a lógica de backend (o arquivo `enviar.php` que seria necessário para receber os dados) não está incluída neste repositório. Portanto, o envio dos formulários não funcionará; eles são apenas parte do design da interface.
+O arquivo `js/formulario.js` e o `js/script.js` preparam os formulários, mas a lógica de backend (o arquivo `enviar.php` que seria necessário para receber os dados) não está incluída neste repositório. Portanto, o envio dos formulários não funcionará; eles são apenas parte do design da interface.
