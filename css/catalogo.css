@@ -69,7 +69,7 @@
     flex-shrink: 0;
 }
 
-.catalogo-info h3 {
+.catalogo-info h2 {
     font-size: 28px;
     color: var(--cor-secundaria);
     text-transform: uppercase;
