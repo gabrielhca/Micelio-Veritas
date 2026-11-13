@@ -37,3 +37,18 @@ planos.forEach(plano => {
 
 // Inicia a visibilidade correta ao carregar a página
 document.addEventListener('DOMContentLoaded', iniciarPlanos);
+
+// Formulários demonstrativos: o site não tem backend, então nada é enviado
+const formularios = document.querySelectorAll('form.form');
+
+function avisarFormularioDemonstrativo(event) {
+  event.preventDefault();
+  const aviso = document.createElement('p');
+  aviso.className = 'form-aviso col-2';
+  aviso.textContent = 'Formulário demonstrativo: este site não tem servidor, então nenhum dado foi enviado.';
+  event.target.replaceChildren(aviso);
+}
+
+formularios.forEach(formulario => {
+  formulario.addEventListener('submit', avisarFormularioDemonstrativo);
+});

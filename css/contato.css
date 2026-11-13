@@ -270,3 +270,9 @@
     }
 }
 
+
+.form-aviso {
+  padding: 1rem;
+  border-radius: 4px;
+  background: var(--cor-fundo-alternativo);
+}
