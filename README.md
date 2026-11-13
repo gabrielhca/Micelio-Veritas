@@ -1,30 +1,36 @@
-# Micelio Veritas - Website de Assinatura de Cogumelos
+# Micelio Veritas
 
-Este é um projeto de website front-end estático para a "Micelio Veritas", uma empresa fictícia especializada no cultivo e fornecimento de cogumelos gourmet de alta qualidade.
+Site estático de uma marca fictícia de cogumelos gourmet vendidos por assinatura, com página inicial, planos e contato.
 
-## 1. Conceito do Projeto
+## Como rodar
 
-Micelio Veritas é posicionada como uma marca premium que une tradição (herdada de um fundador fictício, Silas Nogueira) e rigor técnico. O site serve como a principal vitrine digital e canal de aquisição de clientes.
+Não precisa instalar nada. Clone o repositório e abra o `index.html` no navegador.
 
-O conceito é oferecer uma experiência sofisticada ao usuário, destacando a qualidade e a textura dos produtos, que são cultivados "sem pressa" e com controle meticuloso. O modelo de negócios principal é a assinatura, com planos voltados tanto para entusiastas e famílias quanto para chefs profissionais e restaurantes.
+Se preferir usar um servidor local:
 
-### Páginas Principais
+```bash
+python3 -m http.server
+```
 
--   **index.html (Homepage):** Apresenta a filosofia da marca, um catálogo visual dos cogumelos, depoimentos de clientes e a seção de "Rigor e Sofisticação", que explica o diferencial do cultivo.
--   **assinatura.html (Assinatura):** Detalha os dois planos de assinatura ("Família Micélios" e "Chef Micélios"), mostrando os benefícios de cada um, e inclui o formulário de cadastro.
--   **contato.html (Contato):** Disponibiliza canais de atendimento (email, telefone), os endereços dos "Núcleos de Cultivo" (MG e SP) e um formulário de contato.
+e acesse `http://localhost:8000`.
 
-## 2. Como Executar o Site
+Os formulários de assinatura e contato são demonstrativos: o site não tem servidor, então ao enviar aparece um aviso e nenhum dado sai do navegador.
 
-Este é um site puramente estático (HTML, CSS, JS). Não há necessidade de instalação de dependências (como Node.js) ou processos de build para visualizá-lo.
+## Tecnologias
 
-1.  Clone ou baixe este repositório.
-2.  Navegue até a pasta do projeto.
-3.  Dê um duplo-clique no arquivo `index.html`.
-4.  O site abrirá diretamente no seu navegador padrão.
+- HTML
+- CSS (CSS Grid, Flexbox, variáveis CSS e media queries, um arquivo por seção)
+- JavaScript puro (menu mobile, troca de plano e aviso dos formulários)
+- Google Fonts (Playfair Display e Inter)
 
-## 3. Observação Importante
+## O que aprendi
 
-Os formulários de contato e assinatura são apenas visuais.
+- A montar um layout responsivo com Grid e Flexbox, ajustando o espaçamento do container para cada tamanho de tela.
+- A separar o CSS por seção da página, o que facilitou achar e mexer em cada parte.
+- A fazer um menu mobile acessível, atualizando `aria-expanded` e `aria-label` quando ele abre e fecha.
+- A usar `input type="radio"` com `label` para escolher o plano e mostrar os detalhes certos com JavaScript.
+- Que o peso das imagens faz muita diferença: trocar PNG por WebP reduziu as fotos de cerca de 7 MB para 0,6 MB sem perda visível.
 
-O arquivo `js/formulario.js` e o `js/script.js` preparam os formulários, mas a lógica de backend (o arquivo `enviar.php` que seria necessário para receber os dados) não está incluída neste repositório. Portanto, o envio dos formulários não funcionará; eles são apenas parte do design da interface.
+## Estado atual
+
+Concluído.
