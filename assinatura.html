@@ -108,7 +108,7 @@
         </div>
         <div class="col-2">
           <label for="cpf">CPF</label>
-          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" inputmode="numeric" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" title="Digite os 11 números do CPF, com ou sem pontos e traço" required>
         </div>
         <div class="col-2">
           <label for="email">Email</label>
@@ -118,11 +118,11 @@
         <h2 class="col-2"><span class="icone-ponto"><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8.01855" y="0.00927734" width="12" height="8" rx="4" transform="rotate(90.1313 8.01855 0.00927734)" fill="url(#paint0_linear_492_602)"/></svg></span>entrega</h2>
         <div>
           <label for="cep">CEP</label>
-          <input type="text" id="cep" name="cep" required>
+          <input type="text" id="cep" name="cep" placeholder="00000-000" inputmode="numeric" maxlength="9" pattern="\d{5}-?\d{3}" title="Digite os 8 números do CEP, com ou sem traço" required>
         </div>
         <div>
           <label for="numero">Número</label>
-          <input type="text" id="numero" name="numero" required>
+          <input type="text" id="numero" name="numero" inputmode="numeric" required>
         </div>
         <div class="col-2">
           <label for="logradouro">Logradouro</label>
@@ -138,7 +138,7 @@
         </div>
         <div>
           <label for="estado">Estado</label>
-          <input type="text" id="estado" name="estado" required>
+          <input type="text" id="estado" name="estado" placeholder="MG" maxlength="2" pattern="[A-Za-z]{2}" title="Digite a sigla do estado, por exemplo MG" required>
         </div>
         
         <div class="col-2">
