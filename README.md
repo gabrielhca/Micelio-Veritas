@@ -2,6 +2,8 @@
 
 Site estático de uma marca fictícia de cogumelos gourmet vendidos por assinatura, com página inicial, planos e contato.
 
+**Acesse:** https://gabrielhca.github.io/Micelio-Veritas/
+
 ## Como rodar
 
 Não precisa instalar nada. Clone o repositório e abra o `index.html` no navegador.
