@@ -39,7 +39,8 @@
     font-size: 18px;
 }
 
-.header-menu a:hover {
+.header-menu a:hover,
+.header-menu a[aria-current="page"] {
     color: var(--cor-destaque);
 }
 
